@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -32,3 +33,12 @@
   return 0;
 
 }
+=======
+#include <stdio.h>
+
+int main(int argc, char const *argv[]) 
+{
+    int estudiantes = 5;
+    int asignaturas = 3;
+    float notas[5][3];
+>>>>>>> a4b87d560c6f67d3a73762c1b9307fdbff5ce6e6

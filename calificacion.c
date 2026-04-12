@@ -59,6 +59,20 @@ int main(int argc, char const *argv[])
         printf("Asignatura %d -> Mas alta: %.2f  Mas baja: %.2f\n", j + 1, alta, baja);
     }
 
+    // Aprobados y reprobados
+    printf("\nAprobados y Reprobados por Asignatura\n");
+    for (int j = 0; j < asignaturas; j++) {
+        int aprobados = 0, reprobados = 0;
+        for (int i = 0; i < estudiantes; i++) {
+            if (notas[i][j] >= 6) aprobados++;
+            else reprobados++;
+        }
+        printf("Asignatura %d -> Aprobados: %d  Reprobados: %d\n", j + 1, aprobados, reprobados);
+    }
+
+    return 0;
+}
+
 
 
 

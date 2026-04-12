@@ -17,7 +17,6 @@ int main(int argc, char const *argv[])
              } while (notas[i][j] < 0 || notas[i][j] > 10);
                  }
     }
-
 // Promedio por estudiante
 //Maria Sol Buitron
     printf("\nPromedio por Estudiante\n");
@@ -27,7 +26,14 @@ int main(int argc, char const *argv[])
             suma += notas[i][j];
         printf("Estudiante %d: %.2f\n", i + 1, suma / asignaturas);
     }
-
+ // Promedio por asignatura
+    printf("\nPromedio por Asignatura\n");
+    for (int j = 0; j < asignaturas; j++) {
+        float suma = 0;
+        for (int i = 0; i < estudiantes; i++)
+            suma += notas[i][j];
+        printf("Asignatura %d: %.2f\n", j + 1, suma / estudiantes);
+    }
 
 
 

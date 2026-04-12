@@ -47,6 +47,17 @@ int main(int argc, char const *argv[])
         }
         printf("Estudiante %d -> Mas alta: %.2f  Mas baja: %.2f\n", i + 1, alta, baja);
     }
+    // Calificacion mas alta y baja por asignatura
+    printf("\nCalificacion mas alta y baja por Asignatura\n");
+    for (int j = 0; j < asignaturas; j++) {
+        float alta = notas[0][j], baja = notas[0][j];
+        for (int i = 1; i < estudiantes; i++) {
+            if (notas[i][j] > alta) alta = notas[i][j];
+            if (notas[i][j] < baja) baja = notas[i][j];
+        }
+        printf("Asignatura %d -> Mas alta: %.2f  Mas baja: %.2f\n", j + 1, alta, baja);
+    }
+
 
 
 

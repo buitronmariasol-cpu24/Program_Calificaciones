@@ -48,6 +48,7 @@ int main(int argc, char const *argv[])
         printf("Estudiante %d -> Mas alta: %.2f  Mas baja: %.2f\n", i + 1, alta, baja);
     }
     // Calificacion mas alta y baja por asignatura
+//Michelle Altamirano
     printf("\nCalificacion mas alta y baja por Asignatura\n");
     for (int j = 0; j < asignaturas; j++) {
         float alta = notas[0][j], baja = notas[0][j];

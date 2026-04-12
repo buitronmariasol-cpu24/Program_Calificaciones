@@ -27,6 +27,7 @@ int main(int argc, char const *argv[])
         printf("Estudiante %d: %.2f\n", i + 1, suma / asignaturas);
     }
  // Promedio por asignatura
+//Michelle ALtamirano
     printf("\nPromedio por Asignatura\n");
     for (int j = 0; j < asignaturas; j++) {
         float suma = 0;

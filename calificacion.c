@@ -60,6 +60,7 @@ int main(int argc, char const *argv[])
     }
 
     // Aprobados y reprobados
+    //Maria Sol Buitron
     printf("\nAprobados y Reprobados por Asignatura\n");
     for (int j = 0; j < asignaturas; j++) {
         int aprobados = 0, reprobados = 0;
